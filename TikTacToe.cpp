@@ -1,11 +1,16 @@
 ﻿#include <iostream>
-#include "Main.cpp"
+#include "Header.h"
 
 using namespace std;
 
 
 int main()
 {
-	char board[3][3];
+	init();
+	while (!is_game_over) {
+		get_coords();
+		myprint();
+	}
+	myprint();
 }
 
